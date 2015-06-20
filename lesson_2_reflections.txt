@@ -1,0 +1,14 @@
+What happens when you create new repository and why should you?
+You create a new repository when you want to add version control and git tracking
+to the given directory (/project).
+Until you do, git doesn't know to track the given folder. When you do, it sets up the neccessary
+folder structure (/.git) and processes (?) to do so.
+
+Why do you need a staging area?
+The staging area contains the files that you want to track and make part of the 
+NEXT commit. Not all files need to be added to the staging area, allowing each commit
+to contain only logical changes.
+The key thing to remember here is that the repository doesn't contain
+these changes YET. The working directory contains all files.
+
+

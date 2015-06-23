@@ -1,6 +1,7 @@
 When you can see 2 different versions of a file, you know exactly where changes
 were made. With that piece of information, what was originally the complex tasks of
-looking through two possibly large masses of text AND finding possibly minor differences AND figuring out the exact cause of the bug has been simplified into
+looking through two possibly large masses of text AND finding possibly minor 
+differences AND figuring out the exact cause of the bug has been simplified into
 simply the third task; The computer takes care of the first two.
 
 
@@ -21,13 +22,17 @@ in a manner that each commit represents a "logical" change and isn't just an arb
 -Might miss(forget) out on important checkpoints making the diff too large
 
 Why some vcs allow saving multiple files others (Google docs) only one file at a time:
-It all boils down to usage patterns of the app in question. Google docs in general is used to edit single documents. Git is used to edit code for software projects which often contain multiple 
-files that are dependent on each other and worked on simultaneously. It would make more sense to track these
+It all boils down to usage patterns of the app in question. Google docs in 
+general is used to edit single documents. Git is used to edit code for software 
+projects which often contain multiple files that are dependent on each other 
+and worked on simultaneously. It would make more sense to track these
 changes together.
 
 Git log and diff to view history of files
 Log can be used to view chronological updates to the projects, the commit description
-is a useful way (if properly updated) to indicate logical progress/change made throughout the project history. While the commit desc indicates the overall change made between two commits, exact changes in the code can be tracked through the git diff command
+is a useful way (if properly updated) to indicate logical progress/change made 
+throughout the project history. While the commit desc indicates the overall 
+change made between two commits, exact changes in the code can be tracked through the git diff command
 
 With VCS you can rest assured that any major bug/show stopping change is just a
 checkout away from being fixed. Change away!

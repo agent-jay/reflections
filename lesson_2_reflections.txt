@@ -11,4 +11,23 @@ to contain only logical changes.
 The key thing to remember here is that the repository doesn't contain
 these changes YET. The working directory contains all files.
 
+How can you use the staging area to make sure you have one logical change per commit
+Say you've made several changes to your project files, each representing some
+logical change in the code. Now, instead of having to save all these changes as a
+single commit, the staging area allows you to add only the files needed for a logical
+change, commit and then redo the process for the other files representing the
+next logical change
 
+What are some situations when branches would be helpful in keeping your history 
+organized? How would branches help?
+Branches could help when you want to work on new features that you don't want
+as part of the main project (or master branch) as it's still not ready, not the main
+focus, etc. Branches would allow one to work on these features in parallel and
+then when it's finally ready, it can be "merged" back with the master branch
+
+How do diagrams help you visualize branch structure?
+The history of a repository having more than one branch resembles a tree structure.
+Apart from the obvious benefit of providing a visual representation of the history,
+the diagram also provides help in one additional way- with the concept of 'reachability'
+Knowing which commits are 'reachable' from another in a repository is easily visualized
+using the diagram.

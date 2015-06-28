@@ -31,3 +31,16 @@ Apart from the obvious benefit of providing a visual representation of the histo
 the diagram also provides help in one additional way- with the concept of 'reachability'
 Knowing which commits are 'reachable' from another in a repository is easily visualized
 using the diagram.
+
+What is the result of merging two branches together? Why do we represent it in 
+the diagram the way we do?
+A merging strategy is used to combine 2 branches together. When this is correctly done,
+the changes in both branches are added together. The two branches now become one,
+with the new branch having the same name as that of the branch that was checked out
+before performing the merge.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging works in cases where there is NO ambiguity. If there is any ambiguity at
+all, it defers to the user; It's now your job to resolve it. 
+Git is automatic when it can (better than always manual) and reverts to manual model when
+it doesn't know how to merge. So it incorporates the best of both worlds.

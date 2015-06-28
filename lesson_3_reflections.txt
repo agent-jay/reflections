@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+-When you'd like a backup of your code in the cloud, that you can access from anywhere
+-When you want to collaborate with others on a project
+

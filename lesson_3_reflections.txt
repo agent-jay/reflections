@@ -2,3 +2,39 @@ When would you want to use a remote repository rather than keeping all your work
 -When you'd like a backup of your code in the cloud, that you can access from anywhere
 -When you want to collaborate with others on a project
 
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+This behaviour is similar to how commits are made manually rather than 
+automatically, it gives the user greater control.
+There could be several reasons for preferring manual pulls:
+-You might be working on a feature in parallel with the version on the remote,
+and pulling might overwrite your own changes.
+-The latest version of the repository on Github might not be compatible with 
+the version you are working on, or the opposite, your local version might be 
+ahead of the remote version
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Branches exist within a repository.
+Forks exist only on github- they are clones of repositories but reside on 
+Github's servers, made by Github when requested
+Clones are copies of repositories, period. Clones can be made of remote repositories 
+(like on Github, also called a fork) or of local ones too (at a different directory).
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+Any pushes/pulls to/from the remote repository are actually performed internally using a
+local copy. Having a copy of the last known state allows you to work parallely on
+your own branch while still having an offline copy of the remote version, that you
+can then git diff/ git log on.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+Mails? It would be pretty hard to keep track of the project, things could get hairy pretty quickly
+What would be easier? I think without vcs as a crutch/superpower, one would be forced
+into being more careful with changes and merges. But that's a long shot.
+The more people/pull requests (or equivalent) on the project, the harder it will be
+to maintain.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+Unless you own a repository or are the primary contributor to a project, I would imagine
+using separate branches almost always- first creating a separate branch (during which
+the remote master would update), pull master, merge into the new branch, push to 
+a remote branch, then FINALLY send a pull request to incorporate your changes into
+master
